@@ -80,6 +80,7 @@ html {
 
 .container .ist {
     background-image: url("../img/kort.png");
+    padding: left: 5%;
 }
 
 .container .fir {
