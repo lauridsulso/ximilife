@@ -35,10 +35,11 @@ html {
 }
 
 .container h2 {
-    font-size: 7em;
+    font-size: 5em;
     color: #fff;
     z-index: 10;
     opacity: 0.8;
+    font-weight: 300;
 }
 
 .container h3 {
@@ -57,7 +58,7 @@ html {
 .bg {
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
-    padding: 2em 0;
+    padding: 1em 0;
 
 }
 
@@ -69,6 +70,7 @@ html {
 
 }
 
+
 .container .pa {
     background-image: url("../img/kurv.jpg");
 }
@@ -78,8 +80,12 @@ html {
     margin-top: -12%;
 }
 
+#tekst1{
+    color: #202737;
+}
+
 .container .ist {
-    background-image: url("../img/kort.png");
+    background-image: url("../img/kort2.png");
     padding: left: 5%;
 }
 
@@ -89,7 +95,7 @@ html {
 
 .container .parallax {
     width: 100%;
-    padding: 25em 0;
+    padding: 24em 0;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,6 +103,19 @@ html {
     background-attachment: fixed;
     overflow: hidden;
 }
+
+
+.container .parallax2 {
+    width: 100%;
+    padding: 40em 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
 
 .video {
     width: 100%;
