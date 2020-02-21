@@ -31,9 +31,9 @@ function aktiverMultimedier() {
 function aktiverTekstAnimation() {
     for (let i = 0; i <= tekstIdListe.length - 1; i++) {
         if (erSynlig(tekstIdListe[i])) {
-            document.getElementById(tekstIdListe[i]).classList.add("roll-in-right");
+            document.getElementById(tekstIdListe[i]).classList.add("slide-fwd-top");
         } else {
-            document.getElementById(tekstIdListe[i]).classList.remove("roll-in-right");
+            document.getElementById(tekstIdListe[i]).classList.remove("slide-fwd-top");
         }
     }
 }
