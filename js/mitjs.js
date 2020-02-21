@@ -43,10 +43,11 @@ const tekstIdListe = ["tekst1", "tekst2", "tekst3", "tekst4"];
 const AVIdListe = ["paris", "istanbul", "firenze", "video"];
 const AVIndholdsliste = [];
 
-AVIndholdsliste[0] = new Audio("Bouncy_Fun_1.mp3");
-AVIndholdsliste[1] = new Audio("Walker.mp3");
-AVIndholdsliste[2] = new Audio("Funky_Groove.mp3");
+AVIndholdsliste[0] = new Audio("");
+AVIndholdsliste[1] = new Audio("");
+AVIndholdsliste[2] = new Audio("");
 AVIndholdsliste[3] = document.getElementById("video");
+
 
 window.addEventListener("scroll", function () {
     aktiverMultimedier();

@@ -72,7 +72,7 @@ html {
 
 
 .container .pa {
-    background-image: url("../img/kurv.jpg");
+    background-image: url("../img/kurv.png");
 }
 
 .pil1{
@@ -81,7 +81,8 @@ html {
 }
 
 .pil3{
-    margin-top:
+    margin-top: -10%;
+    margin-bottom: -5%;
 }
 
 #tekst1{
@@ -104,11 +105,15 @@ html {
 font-weight: 400;}
 
 .billeder{
-    width: 100%;
-    margin-bottom: -10%;
+    width: 80%;
+    margin-bottom: 20px;
+
+}
 
 
 
+.billeder {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container .ist {
@@ -122,7 +127,7 @@ font-weight: 400;}
 
 .container .parallax {
     width: 100%;
-    padding: 24em 0;
+    padding: 26.5em 0;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,6 +152,8 @@ font-weight: 400;}
 
 .video {
     width: 100%;
+    margin-top: -16.5%;
+    margin-bottom: -5%;
 }
 
 
@@ -270,4 +277,9 @@ transition: transform .4s; /* Animation */
         -webkit-transform: translateY(25px);
         transform: translateY(25px);
     }
+}
+
+#logounderside{
+    display: block;
+    align-content: center;
 }
