@@ -1,55 +1,28 @@
-"use strict";
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-function erSynlig(elementId) {
-    const elementBoks = document.getElementById(elementId).getBoundingClientRect();
-    const halvtredsPct = elementBoks.height * 0.5;
-    const start = window.innerHeight - halvtredsPct;
+let countDown = new Date('Mar 30, 2020 00:00:00').getTime(),
+    x = setInterval(function() {
 
-    if (elementBoks.top <= start && elementBoks.bottom - halvtredsPct > 0) {
-        return true;
-    } else {
-        return false;
-    }
-
-}
-
-function aktiverMultimedier() {
-
-    for (let i = 0; i <= AVIdListe.length - 1; i++) {
-
-        if (erSynlig(AVIdListe[i])) {
-            AVIndholdsliste[i].loop = true;
-            AVIndholdsliste[i].play();
-        } else {
-            AVIndholdsliste[i].pause();
-            AVIndholdsliste[i].currentTime = 0;
-        }
-
-    }
-}
-
-function aktiverTekstAnimation() {
-    for (let i = 0; i <= tekstIdListe.length - 1; i++) {
-        if (erSynlig(tekstIdListe[i])) {
-            document.getElementById(tekstIdListe[i]).classList.add("slide-fwd-top");
-        } else {
-            document.getElementById(tekstIdListe[i]).classList.remove("slide-fwd-top");
-        }
-    }
-}
-
-// Hovedprogramdel
-const tekstIdListe = ["tekst1", "tekst2", "tekst3", "tekst4"];
-const AVIdListe = ["paris", "istanbul", "firenze", "video"];
-const AVIndholdsliste = [];
-
-AVIndholdsliste[0] = new Audio("");
-AVIndholdsliste[1] = new Audio("");
-AVIndholdsliste[2] = new Audio("");
-AVIndholdsliste[3] = document.getElementById("video");
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
 
-window.addEventListener("scroll", function () {
-    aktiverMultimedier();
-    aktiverTekstAnimation();
-});
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+
+
+    }, second)
+
+
+
